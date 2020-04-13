@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServer";
+
+package greet;
+
+
+service AskName {
+ 
+  rpc AskName (NameRequest) returns (NameReply);
+}
+
+message NameRequest {
+  string name = 1;
+}
+
+message NameReply {
+  string message = 1;
+}

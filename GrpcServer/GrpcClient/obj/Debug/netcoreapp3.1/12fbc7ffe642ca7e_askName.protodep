@@ -1,0 +1,2 @@
+obj\Debug\netcoreapp3.1/AskName.cs \
+obj\Debug\netcoreapp3.1/AskNameGrpc.cs: Protos/askName.proto
