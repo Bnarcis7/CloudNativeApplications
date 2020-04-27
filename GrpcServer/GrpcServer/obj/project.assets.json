@@ -634,11 +634,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Narcis\\source\\repos\\GrpcServer\\GrpcServer\\GrpcServer.csproj",
+      "projectUniqueName": "E:\\CloudNativeApplications\\GrpcServer\\GrpcServer\\GrpcServer.csproj",
       "projectName": "GrpcServer",
-      "projectPath": "C:\\Users\\Narcis\\source\\repos\\GrpcServer\\GrpcServer\\GrpcServer.csproj",
+      "projectPath": "E:\\CloudNativeApplications\\GrpcServer\\GrpcServer\\GrpcServer.csproj",
       "packagesPath": "C:\\Users\\Narcis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Narcis\\source\\repos\\GrpcServer\\GrpcServer\\obj\\",
+      "outputPath": "E:\\CloudNativeApplications\\GrpcServer\\GrpcServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Narcis\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bBPLewX+EjLItwGL0F1jmnvyCacmI4aAOCdYFsV0V5DKwlIMjKYN6E1/K6vCiiqcxkz5ovDKbbWo3+VrY+QfrA==",
+  "dgSpecHash": "N+x/nQ75I/Gs3CeIKuK3zTthirHplI3uOl+u2vTWs3tvW3rn0TSHl0sV5F8AmkEP2nGSgXlgxxsw4L1tPu4fEg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Narcis\\source\\repos\\GrpcServer\\GrpcServer\\GrpcServer.csproj",
+  "projectFilePath": "E:\\CloudNativeApplications\\GrpcServer\\GrpcServer\\GrpcServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Narcis\\.nuget\\packages\\google.protobuf\\3.10.0\\google.protobuf.3.10.0.nupkg.sha512",
     "C:\\Users\\Narcis\\.nuget\\packages\\grpc.aspnetcore\\2.24.0\\grpc.aspnetcore.2.24.0.nupkg.sha512",

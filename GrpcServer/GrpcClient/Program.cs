@@ -1,30 +1,40 @@
 ﻿using Grpc.Net.Client;
 using GrpcServer;
 using System;
+using System.Globalization;
 
 namespace GrpcClient
 {
     class Program
     {
-        static async System.Threading.Tasks.Task Main(string[] args)
+        static void Main(string[] args)
         {
-            var channel = GrpcChannel.ForAddress("https://localhost:5001");
-            //Console.WriteLine("Enter number of clients:");
-            //var n =Int32.Parse(Console.ReadLine());
-
             while (true)
             {
-                var client = new AskName.AskNameClient(channel);
-                Console.WriteLine("Enter your name:");
-                var name = new NameRequest { Name = Console.ReadLine() };
-                var reply = await client.AskNameAsync(name);
+                var channel = GrpcChannel.ForAddress("https://localhost:5001");
+                var client = new Zodiac.ZodiacClient(channel);
+                string input = InputValidation();
+                Console.WriteLine("Zodiac Sign: " + client.GetZodiacSign(new DateRequest { Date = input }).Sign.ToString());
             }
-           
+        }
 
+        public static string InputValidation()
+        {
+            Console.WriteLine("\nEnter your birthdate (MM/DD/YYYY): ");
+            string input = Console.ReadLine();
+            string pattern = "MM/dd/yyyy";
+            DateTime parsedDate;
 
+            while (!DateTime.TryParseExact(input, pattern, null, DateTimeStyles.None, out parsedDate))
+            {
+                Console.WriteLine("Incorrect input! Please enter your birthday: ");
+                input = Console.ReadLine();
+            }
+
+            return input;
 
         }
 
-         
+
     }
 }
