@@ -22,10 +22,9 @@ namespace GrpcClient
         {
             Console.WriteLine("\nEnter your birthdate (MM/DD/YYYY): ");
             string input = Console.ReadLine();
-            string pattern = "MM/dd/yyyy";
             DateTime parsedDate;
 
-            while (!DateTime.TryParseExact(input, pattern, null, DateTimeStyles.None, out parsedDate))
+            while (!DateTime.TryParseExact(input,"MM/dd/yyyy", null, DateTimeStyles.None, out parsedDate))
             {
                 Console.WriteLine("Incorrect input! Please enter your birthday: ");
                 input = Console.ReadLine();

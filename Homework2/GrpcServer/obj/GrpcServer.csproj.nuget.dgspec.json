@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CloudNativeApplications\\GrpcServer\\GrpcServer\\GrpcServer.csproj": {}
+    "E:\\CloudNativeApplications\\Homework2\\GrpcServer\\GrpcServer.csproj": {}
   },
   "projects": {
-    "E:\\CloudNativeApplications\\GrpcServer\\GrpcServer\\GrpcServer.csproj": {
+    "E:\\CloudNativeApplications\\Homework2\\GrpcServer\\GrpcServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CloudNativeApplications\\GrpcServer\\GrpcServer\\GrpcServer.csproj",
+        "projectUniqueName": "E:\\CloudNativeApplications\\Homework2\\GrpcServer\\GrpcServer.csproj",
         "projectName": "GrpcServer",
-        "projectPath": "E:\\CloudNativeApplications\\GrpcServer\\GrpcServer\\GrpcServer.csproj",
+        "projectPath": "E:\\CloudNativeApplications\\Homework2\\GrpcServer\\GrpcServer.csproj",
         "packagesPath": "C:\\Users\\Narcis\\.nuget\\packages\\",
-        "outputPath": "E:\\CloudNativeApplications\\GrpcServer\\GrpcServer\\obj\\",
+        "outputPath": "E:\\CloudNativeApplications\\Homework2\\GrpcServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Narcis\\AppData\\Roaming\\NuGet\\NuGet.Config",
