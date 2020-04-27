@@ -14,12 +14,10 @@ namespace GrpcServer.Services
             string startDate;
             string endDate;
             string ZodiacSign;
-            string pattern = "MM/dd/yyyy";
             var path = File.ReadAllLines("ZodiacDates.txt");
-
-            DateTime requestParsed;
-            DateTime startParsed;
-            DateTime endParsed;
+            DateTime requested;
+            DateTime start;
+            DateTime end;
 
             for (var i = 0; i < path.Length; i += 3)
             {
@@ -27,9 +25,9 @@ namespace GrpcServer.Services
                 endDate = path.ElementAt(i + 1).ToString();
                 ZodiacSign = path.ElementAt(i + 2).ToString();
 
-                if (DateTime.TryParseExact(startDate, pattern, null, DateTimeStyles.None, out startParsed)&& DateTime.TryParseExact(endDate, pattern, null, DateTimeStyles.None, out endParsed)&& DateTime.TryParseExact(request.Date, pattern, null, DateTimeStyles.None, out requestParsed))
+                if (DateTime.TryParseExact(startDate, "MM/dd/yyyy", null, DateTimeStyles.None, out start)&& DateTime.TryParseExact(endDate, "MM/dd/yyyy", null, DateTimeStyles.None, out end)&& DateTime.TryParseExact(request.Date, "MM/dd/yyyy", null, DateTimeStyles.None, out requested))
                 {
-                    if (((startParsed.Month < requestParsed.Month) || (startParsed.Month == requestParsed.Month && startParsed.Day <= requestParsed.Day)) && ((endParsed.Month > requestParsed.Month) || (endParsed.Month == requestParsed.Month) && endParsed.Day >= requestParsed.Day))
+                    if (((start.Month < requested.Month) || (start.Month == requested.Month && start.Day <= requested.Day)) && ((end.Month > requested.Month) || (end.Month == requested.Month) && end.Day >= requested.Day))
                     {
                         return Task.FromResult(new ZodiacResponse { Sign = ZodiacSign });
                     }

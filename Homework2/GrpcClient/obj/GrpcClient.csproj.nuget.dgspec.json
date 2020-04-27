@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CloudNativeApplications\\GrpcServer\\GrpcClient\\GrpcClient.csproj": {}
+    "E:\\CloudNativeApplications\\Homework2\\GrpcClient\\GrpcClient.csproj": {}
   },
   "projects": {
-    "E:\\CloudNativeApplications\\GrpcServer\\GrpcClient\\GrpcClient.csproj": {
+    "E:\\CloudNativeApplications\\Homework2\\GrpcClient\\GrpcClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CloudNativeApplications\\GrpcServer\\GrpcClient\\GrpcClient.csproj",
+        "projectUniqueName": "E:\\CloudNativeApplications\\Homework2\\GrpcClient\\GrpcClient.csproj",
         "projectName": "GrpcClient",
-        "projectPath": "E:\\CloudNativeApplications\\GrpcServer\\GrpcClient\\GrpcClient.csproj",
+        "projectPath": "E:\\CloudNativeApplications\\Homework2\\GrpcClient\\GrpcClient.csproj",
         "packagesPath": "C:\\Users\\Narcis\\.nuget\\packages\\",
-        "outputPath": "E:\\CloudNativeApplications\\GrpcServer\\GrpcClient\\obj\\",
+        "outputPath": "E:\\CloudNativeApplications\\Homework2\\GrpcClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Narcis\\AppData\\Roaming\\NuGet\\NuGet.Config",
