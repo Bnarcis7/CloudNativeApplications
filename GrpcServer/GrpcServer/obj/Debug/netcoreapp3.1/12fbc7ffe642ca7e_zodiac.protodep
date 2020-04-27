@@ -1,2 +1,0 @@
-obj\Debug\netcoreapp3.1/Zodiac.cs \
-obj\Debug\netcoreapp3.1/ZodiacGrpc.cs: Protos/zodiac.proto
