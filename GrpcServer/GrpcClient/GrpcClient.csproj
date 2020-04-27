@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Protos\askName.proto" />
+    <None Remove="Protos\zodiac.proto" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="Protos\askName.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\zodiac.proto" GrpcServices="Client" />
   </ItemGroup>
 
 </Project>

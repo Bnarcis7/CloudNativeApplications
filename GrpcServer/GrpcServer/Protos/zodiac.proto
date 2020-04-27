@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServer";
+
+service Zodiac{
+	rpc GetZodiacSign(DateRequest) returns (ZodiacResponse);
+}
+
+message DateRequest{
+	string date=1;
+}
+
+message ZodiacResponse{
+    string sign=1;
+}
+
